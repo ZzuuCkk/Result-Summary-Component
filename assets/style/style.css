@@ -3,12 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    
-}
 .app{
-    width: 550px;
-    /* height: 300px; */
+    max-width: 1440px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -29,7 +26,7 @@ body{
 }
 h3{
     font-family: Hanken-Grotesk;
-    font-size: 10px;
+    font-size: 15px;
     color: var(--Dark-gray-blue);
     padding: 20px 0;
     
@@ -105,9 +102,10 @@ h3{
 
 }
 
-.summary h2{
+.sumh{
     font-family: Hanken-Grotesk;
-    margin-left: 22px;
+    text-align: center;
+    margin-right: 60px;
     font-size: 18px;
     padding: 20px 0;
 }
@@ -122,8 +120,9 @@ h3{
     margin: 0 10px;
 }
 
-.list {
-    border-radius: 3px;
+.child {
+    border-radius: 5px;
+    
 }
 
  .one{
@@ -194,4 +193,57 @@ button{
     border: none;
     border-radius: 10px;
     padding: 5px 0;
+}
+
+@media (width < 376px){
+    .app{
+        max-width: 375px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin:0;
+    }
+    .result{
+        width: 100%;
+        border-radius: 0 0 10px 10px ;
+    }
+
+
+    .summary{
+        width: 100%;
+        border-radius:0;
+    
+    }
+    .summary-element{
+        width: 100%;
+        margin: 0;
+    }
+    
+
+
+    .sumh{
+        font-size: 14px;
+        margin-right: 80px;
+    }
+
+    .one{
+        width: 90%;
+        line-height: 40px;
+    }
+    .two{
+        width: 90%;
+        line-height: 40px;
+    }
+    .three{
+        width: 90%;
+        line-height: 40px;
+    }
+    .four{
+        width: 90%;
+        line-height: 40px;
+    }
+
+    button{
+        margin: 30px auto;
+    }
 }
