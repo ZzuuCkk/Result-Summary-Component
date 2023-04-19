@@ -1,0 +1,10 @@
+/* @font-face{
+    Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk);
+    Weight: 500, 700, 800;
+} */
+
+
+@font-face {
+    font-family: Hanken-Grotesk;
+    src: url(https://fonts.google.com/specimen/Hanken+Grotesk);
+}
